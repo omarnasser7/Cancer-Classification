@@ -1,0 +1,14 @@
+{
+  "n_images": 10000,
+  "n_classes": 2,
+  "class_counts": {
+    "Colon adenocarcinoma": 5000,
+    "Colon benign": 5000
+  },
+  "imbalance_ratio": 1.0,
+  "width_mean": 768.0,
+  "height_mean": 768.0,
+  "color_modes": {
+    "RGB": 120
+  }
+}

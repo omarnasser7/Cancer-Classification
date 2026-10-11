@@ -1,0 +1,16 @@
+{
+  "cancer_type": "leukemia",
+  "class_names": [
+    "Benign",
+    "Malignant_Pre-B",
+    "Malignant_Pro-B",
+    "Malignant_early Pre-B"
+  ],
+  "label2idx": {
+    "Benign": 0,
+    "Malignant_Pre-B": 1,
+    "Malignant_Pro-B": 2,
+    "Malignant_early Pre-B": 3
+  },
+  "img_size": 256
+}

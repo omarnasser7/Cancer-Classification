@@ -1,0 +1,14 @@
+{
+  "cancer_type": "lung",
+  "class_names": [
+    "Lung adenocarcinoma",
+    "Lung benign tissue",
+    "Lung squamous cell carcinoma"
+  ],
+  "label2idx": {
+    "Lung adenocarcinoma": 0,
+    "Lung benign tissue": 1,
+    "Lung squamous cell carcinoma": 2
+  },
+  "img_size": 256
+}

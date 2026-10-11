@@ -1,0 +1,386 @@
+{
+  "CNN": {
+    "summary": {
+      "cancer_type": "leukemia",
+      "model": "CNN",
+      "accuracy": 0.5988,
+      "precision_macro": 0.8104,
+      "recall_macro": 0.6608,
+      "f1_macro": 0.5616,
+      "precision_weighted": 0.8635,
+      "recall_weighted": 0.5988,
+      "f1_weighted": 0.545,
+      "auc": 0.9747,
+      "train_time_sec": 764.1,
+      "epochs": 5,
+      "total_params": 33684420,
+      "trainable_params": 33683652,
+      "img_size": 256,
+      "batch_size": 8,
+      "n_eval_samples": 977,
+      "notes": "from scratch",
+      "timestamp": "2026-09-01 00:35:55",
+      "f1__Benign": 0.4678,
+      "recall__Benign": 0.9766,
+      "f1__Malignant_Pre-B": 0.7925,
+      "recall__Malignant_Pre-B": 0.6562,
+      "f1__Malignant_Pro-B": 0.9658,
+      "recall__Malignant_Pro-B": 1.0,
+      "f1__Malignant_early Pre-B": 0.0203,
+      "recall__Malignant_early Pre-B": 0.0103
+    },
+    "classification_report": {
+      "Benign": {
+        "precision": 0.30755064456721914,
+        "recall": 0.9766081871345029,
+        "f1-score": 0.4677871148459384,
+        "support": 171.0
+      },
+      "Malignant_Pre-B": {
+        "precision": 1.0,
+        "recall": 0.65625,
+        "f1-score": 0.7924528301886793,
+        "support": 288.0
+      },
+      "Malignant_Pro-B": {
+        "precision": 0.9338842975206612,
+        "recall": 1.0,
+        "f1-score": 0.9658119658119658,
+        "support": 226.0
+      },
+      "Malignant_early Pre-B": {
+        "precision": 1.0,
+        "recall": 0.010273972602739725,
+        "f1-score": 0.020338983050847456,
+        "support": 292.0
+      },
+      "accuracy": 0.5987717502558854,
+      "macro avg": {
+        "precision": 0.8103587355219701,
+        "recall": 0.6607830399343108,
+        "f1-score": 0.5615977234743578,
+        "support": 977.0
+      },
+      "weighted avg": {
+        "precision": 0.8635097353742722,
+        "recall": 0.5987717502558854,
+        "f1-score": 0.5449646868550122,
+        "support": 977.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        167,
+        0,
+        4,
+        0
+      ],
+      [
+        87,
+        189,
+        12,
+        0
+      ],
+      [
+        0,
+        0,
+        226,
+        0
+      ],
+      [
+        289,
+        0,
+        0,
+        3
+      ]
+    ]
+  },
+  "MobileNet": {
+    "summary": {
+      "cancer_type": "leukemia",
+      "model": "MobileNet",
+      "accuracy": 0.9693,
+      "precision_macro": 0.9668,
+      "recall_macro": 0.9649,
+      "f1_macro": 0.9658,
+      "precision_weighted": 0.9692,
+      "recall_weighted": 0.9693,
+      "f1_weighted": 0.9691,
+      "auc": 0.9983,
+      "train_time_sec": 103.5,
+      "epochs": 5,
+      "total_params": 3526212,
+      "trainable_params": 296580,
+      "img_size": 256,
+      "batch_size": 8,
+      "n_eval_samples": 977,
+      "notes": "frozen backbone",
+      "timestamp": "2026-09-01 00:38:13",
+      "f1__Benign": 0.9286,
+      "recall__Benign": 0.9123,
+      "f1__Malignant_Pre-B": 0.9861,
+      "recall__Malignant_Pre-B": 0.9826,
+      "f1__Malignant_Pro-B": 0.9825,
+      "recall__Malignant_Pro-B": 0.9956,
+      "f1__Malignant_early Pre-B": 0.9659,
+      "recall__Malignant_early Pre-B": 0.9692
+    },
+    "classification_report": {
+      "Benign": {
+        "precision": 0.9454545454545454,
+        "recall": 0.9122807017543859,
+        "f1-score": 0.9285714285714286,
+        "support": 171.0
+      },
+      "Malignant_Pre-B": {
+        "precision": 0.9895104895104895,
+        "recall": 0.9826388888888888,
+        "f1-score": 0.9860627177700348,
+        "support": 288.0
+      },
+      "Malignant_Pro-B": {
+        "precision": 0.9698275862068966,
+        "recall": 0.995575221238938,
+        "f1-score": 0.982532751091703,
+        "support": 226.0
+      },
+      "Malignant_early Pre-B": {
+        "precision": 0.9625850340136054,
+        "recall": 0.9691780821917808,
+        "f1-score": 0.9658703071672355,
+        "support": 292.0
+      },
+      "accuracy": 0.9692937563971341,
+      "macro avg": {
+        "precision": 0.9668444137963842,
+        "recall": 0.9649182235184984,
+        "f1-score": 0.9657593011501004,
+        "support": 977.0
+      },
+      "weighted avg": {
+        "precision": 0.9691991941315042,
+        "recall": 0.9692937563971341,
+        "f1-score": 0.9691487292149867,
+        "support": 977.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        156,
+        2,
+        5,
+        8
+      ],
+      [
+        2,
+        283,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        225,
+        1
+      ],
+      [
+        7,
+        1,
+        1,
+        283
+      ]
+    ]
+  },
+  "VGG19": {
+    "summary": {
+      "cancer_type": "leukemia",
+      "model": "VGG19",
+      "accuracy": 0.9877,
+      "precision_macro": 0.9856,
+      "recall_macro": 0.9867,
+      "f1_macro": 0.9861,
+      "precision_weighted": 0.9878,
+      "recall_weighted": 0.9877,
+      "f1_weighted": 0.9877,
+      "auc": 0.9999,
+      "train_time_sec": 465.2,
+      "epochs": 5,
+      "total_params": 36966852,
+      "trainable_params": 36966852,
+      "img_size": 256,
+      "batch_size": 8,
+      "n_eval_samples": 977,
+      "notes": "trainable backbone",
+      "timestamp": "2026-09-01 00:46:33",
+      "f1__Benign": 0.9679,
+      "recall__Benign": 0.9708,
+      "f1__Malignant_Pre-B": 0.9948,
+      "recall__Malignant_Pre-B": 1.0,
+      "f1__Malignant_Pro-B": 0.9956,
+      "recall__Malignant_Pro-B": 1.0,
+      "f1__Malignant_early Pre-B": 0.9862,
+      "recall__Malignant_early Pre-B": 0.976
+    },
+    "classification_report": {
+      "Benign": {
+        "precision": 0.9651162790697675,
+        "recall": 0.9707602339181286,
+        "f1-score": 0.967930029154519,
+        "support": 171.0
+      },
+      "Malignant_Pre-B": {
+        "precision": 0.9896907216494846,
+        "recall": 1.0,
+        "f1-score": 0.9948186528497409,
+        "support": 288.0
+      },
+      "Malignant_Pro-B": {
+        "precision": 0.9912280701754386,
+        "recall": 1.0,
+        "f1-score": 0.9955947136563876,
+        "support": 226.0
+      },
+      "Malignant_early Pre-B": {
+        "precision": 0.9965034965034965,
+        "recall": 0.976027397260274,
+        "f1-score": 0.986159169550173,
+        "support": 292.0
+      },
+      "accuracy": 0.9877175025588536,
+      "macro avg": {
+        "precision": 0.9856346418495467,
+        "recall": 0.9866969077946006,
+        "f1-score": 0.9861256413027051,
+        "support": 977.0
+      },
+      "weighted avg": {
+        "precision": 0.9877813473844953,
+        "recall": 0.9877175025588536,
+        "f1-score": 0.9877038790185694,
+        "support": 977.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        166,
+        2,
+        2,
+        1
+      ],
+      [
+        0,
+        288,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        226,
+        0
+      ],
+      [
+        6,
+        1,
+        0,
+        285
+      ]
+    ]
+  },
+  "ResNet50": {
+    "summary": {
+      "cancer_type": "leukemia",
+      "model": "ResNet50",
+      "accuracy": 0.998,
+      "precision_macro": 0.998,
+      "recall_macro": 0.9977,
+      "f1_macro": 0.9979,
+      "precision_weighted": 0.998,
+      "recall_weighted": 0.998,
+      "f1_weighted": 0.998,
+      "auc": 1.0,
+      "train_time_sec": 254.6,
+      "epochs": 5,
+      "total_params": 90861828,
+      "trainable_params": 90808708,
+      "img_size": 256,
+      "batch_size": 8,
+      "n_eval_samples": 977,
+      "notes": "trainable backbone",
+      "timestamp": "2026-09-01 00:51:21",
+      "f1__Benign": 0.9971,
+      "recall__Benign": 0.9942,
+      "f1__Malignant_Pre-B": 0.9983,
+      "recall__Malignant_Pre-B": 0.9965,
+      "f1__Malignant_Pro-B": 0.9978,
+      "recall__Malignant_Pro-B": 1.0,
+      "f1__Malignant_early Pre-B": 0.9983,
+      "recall__Malignant_early Pre-B": 1.0
+    },
+    "classification_report": {
+      "Benign": {
+        "precision": 1.0,
+        "recall": 0.9941520467836257,
+        "f1-score": 0.9970674486803519,
+        "support": 171.0
+      },
+      "Malignant_Pre-B": {
+        "precision": 1.0,
+        "recall": 0.9965277777777778,
+        "f1-score": 0.9982608695652174,
+        "support": 288.0
+      },
+      "Malignant_Pro-B": {
+        "precision": 0.9955947136563876,
+        "recall": 1.0,
+        "f1-score": 0.9977924944812362,
+        "support": 226.0
+      },
+      "Malignant_early Pre-B": {
+        "precision": 0.9965870307167235,
+        "recall": 1.0,
+        "f1-score": 0.9982905982905983,
+        "support": 292.0
+      },
+      "accuracy": 0.9979529170931423,
+      "macro avg": {
+        "precision": 0.9980454360932778,
+        "recall": 0.9976699561403508,
+        "f1-score": 0.9978528527543509,
+        "support": 977.0
+      },
+      "weighted avg": {
+        "precision": 0.9979609194018699,
+        "recall": 0.9979529170931423,
+        "f1-score": 0.9979525308216345,
+        "support": 977.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        170,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        287,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        226,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        292
+      ]
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "cancer_type": "colon",
+  "class_names": [
+    "Colon adenocarcinoma",
+    "Colon benign"
+  ],
+  "label2idx": {
+    "Colon adenocarcinoma": 0,
+    "Colon benign": 1
+  },
+  "img_size": 256
+}

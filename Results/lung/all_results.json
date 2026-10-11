@@ -1,0 +1,318 @@
+{
+  "CNN": {
+    "summary": {
+      "cancer_type": "lung",
+      "model": "CNN",
+      "accuracy": 0.695,
+      "precision_macro": 0.7787,
+      "recall_macro": 0.695,
+      "f1_macro": 0.6822,
+      "precision_weighted": 0.7787,
+      "recall_weighted": 0.695,
+      "f1_weighted": 0.6822,
+      "auc": 0.9324,
+      "train_time_sec": 151.9,
+      "epochs": 4,
+      "total_params": 33684291,
+      "trainable_params": 33683523,
+      "img_size": 256,
+      "batch_size": 64,
+      "n_eval_samples": 3000,
+      "notes": "from scratch",
+      "timestamp": "2026-09-03 23:31:32",
+      "f1__Lung adenocarcinoma": 0.6339,
+      "recall__Lung adenocarcinoma": 0.786,
+      "f1__Lung benign tissue": 0.557,
+      "recall__Lung benign tissue": 0.386,
+      "f1__Lung squamous cell carcinoma": 0.8557,
+      "recall__Lung squamous cell carcinoma": 0.913
+    },
+    "classification_report": {
+      "Lung adenocarcinoma": {
+        "precision": 0.5310810810810811,
+        "recall": 0.786,
+        "f1-score": 0.6338709677419355,
+        "support": 1000.0
+      },
+      "Lung benign tissue": {
+        "precision": 1.0,
+        "recall": 0.386,
+        "f1-score": 0.556998556998557,
+        "support": 1000.0
+      },
+      "Lung squamous cell carcinoma": {
+        "precision": 0.8051146384479718,
+        "recall": 0.913,
+        "f1-score": 0.8556701030927835,
+        "support": 1000.0
+      },
+      "accuracy": 0.695,
+      "macro avg": {
+        "precision": 0.7787319065096843,
+        "recall": 0.695,
+        "f1-score": 0.6821798759444254,
+        "support": 3000.0
+      },
+      "weighted avg": {
+        "precision": 0.7787319065096845,
+        "recall": 0.695,
+        "f1-score": 0.6821798759444253,
+        "support": 3000.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        786,
+        0,
+        214
+      ],
+      [
+        607,
+        386,
+        7
+      ],
+      [
+        87,
+        0,
+        913
+      ]
+    ]
+  },
+  "MobileNet": {
+    "summary": {
+      "cancer_type": "lung",
+      "model": "MobileNet",
+      "accuracy": 0.953,
+      "precision_macro": 0.955,
+      "recall_macro": 0.953,
+      "f1_macro": 0.9529,
+      "precision_weighted": 0.955,
+      "recall_weighted": 0.953,
+      "f1_weighted": 0.9529,
+      "auc": 0.9953,
+      "train_time_sec": 218.3,
+      "epochs": 10,
+      "total_params": 3526083,
+      "trainable_params": 296451,
+      "img_size": 256,
+      "batch_size": 64,
+      "n_eval_samples": 3000,
+      "notes": "frozen backbone",
+      "timestamp": "2026-09-03 23:35:34",
+      "f1__Lung adenocarcinoma": 0.9322,
+      "recall__Lung adenocarcinoma": 0.97,
+      "f1__Lung benign tissue": 0.9965,
+      "recall__Lung benign tissue": 0.998,
+      "f1__Lung squamous cell carcinoma": 0.9301,
+      "recall__Lung squamous cell carcinoma": 0.891
+    },
+    "classification_report": {
+      "Lung adenocarcinoma": {
+        "precision": 0.8973172987974098,
+        "recall": 0.97,
+        "f1-score": 0.9322441134070159,
+        "support": 1000.0
+      },
+      "Lung benign tissue": {
+        "precision": 0.9950149551345963,
+        "recall": 0.998,
+        "f1-score": 0.9965052421367948,
+        "support": 1000.0
+      },
+      "Lung squamous cell carcinoma": {
+        "precision": 0.972707423580786,
+        "recall": 0.891,
+        "f1-score": 0.930062630480167,
+        "support": 1000.0
+      },
+      "accuracy": 0.953,
+      "macro avg": {
+        "precision": 0.9550132258375973,
+        "recall": 0.953,
+        "f1-score": 0.9529373286746593,
+        "support": 3000.0
+      },
+      "weighted avg": {
+        "precision": 0.9550132258375973,
+        "recall": 0.953,
+        "f1-score": 0.9529373286746592,
+        "support": 3000.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        970,
+        5,
+        25
+      ],
+      [
+        2,
+        998,
+        0
+      ],
+      [
+        109,
+        0,
+        891
+      ]
+    ]
+  },
+  "VGG19": {
+    "summary": {
+      "cancer_type": "lung",
+      "model": "VGG19",
+      "accuracy": 0.989,
+      "precision_macro": 0.989,
+      "recall_macro": 0.989,
+      "f1_macro": 0.989,
+      "precision_weighted": 0.989,
+      "recall_weighted": 0.989,
+      "f1_weighted": 0.989,
+      "auc": 0.9992,
+      "train_time_sec": 779.5,
+      "epochs": 5,
+      "total_params": 20190531,
+      "trainable_params": 165379,
+      "img_size": 256,
+      "batch_size": 64,
+      "n_eval_samples": 3000,
+      "notes": "frozen backbone",
+      "timestamp": "2026-09-03 23:49:13",
+      "f1__Lung adenocarcinoma": 0.9834,
+      "recall__Lung adenocarcinoma": 0.98,
+      "f1__Lung benign tissue": 0.999,
+      "recall__Lung benign tissue": 1.0,
+      "f1__Lung squamous cell carcinoma": 0.9845,
+      "recall__Lung squamous cell carcinoma": 0.987
+    },
+    "classification_report": {
+      "Lung adenocarcinoma": {
+        "precision": 0.9869083585095669,
+        "recall": 0.98,
+        "f1-score": 0.9834420471650778,
+        "support": 1000.0
+      },
+      "Lung benign tissue": {
+        "precision": 0.998003992015968,
+        "recall": 1.0,
+        "f1-score": 0.999000999000999,
+        "support": 1000.0
+      },
+      "Lung squamous cell carcinoma": {
+        "precision": 0.982089552238806,
+        "recall": 0.987,
+        "f1-score": 0.9845386533665835,
+        "support": 1000.0
+      },
+      "accuracy": 0.989,
+      "macro avg": {
+        "precision": 0.9890006342547802,
+        "recall": 0.989,
+        "f1-score": 0.9889938998442201,
+        "support": 3000.0
+      },
+      "weighted avg": {
+        "precision": 0.9890006342547804,
+        "recall": 0.989,
+        "f1-score": 0.98899389984422,
+        "support": 3000.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        980,
+        2,
+        18
+      ],
+      [
+        0,
+        1000,
+        0
+      ],
+      [
+        13,
+        0,
+        987
+      ]
+    ]
+  },
+  "ResNet50": {
+    "summary": {
+      "cancer_type": "lung",
+      "model": "ResNet50",
+      "accuracy": 0.9833,
+      "precision_macro": 0.9835,
+      "recall_macro": 0.9833,
+      "f1_macro": 0.9833,
+      "precision_weighted": 0.9835,
+      "recall_weighted": 0.9833,
+      "f1_weighted": 0.9833,
+      "auc": 0.9992,
+      "train_time_sec": 289.8,
+      "epochs": 5,
+      "total_params": 24147075,
+      "trainable_params": 558595,
+      "img_size": 256,
+      "batch_size": 64,
+      "n_eval_samples": 3000,
+      "notes": "frozen backbone",
+      "timestamp": "2026-09-03 23:54:33",
+      "f1__Lung adenocarcinoma": 0.9752,
+      "recall__Lung adenocarcinoma": 0.985,
+      "f1__Lung benign tissue": 0.9995,
+      "recall__Lung benign tissue": 1.0,
+      "f1__Lung squamous cell carcinoma": 0.9752,
+      "recall__Lung squamous cell carcinoma": 0.965
+    },
+    "classification_report": {
+      "Lung adenocarcinoma": {
+        "precision": 0.9656862745098039,
+        "recall": 0.985,
+        "f1-score": 0.9752475247524752,
+        "support": 1000.0
+      },
+      "Lung benign tissue": {
+        "precision": 0.999000999000999,
+        "recall": 1.0,
+        "f1-score": 0.9995002498750625,
+        "support": 1000.0
+      },
+      "Lung squamous cell carcinoma": {
+        "precision": 0.9856996935648621,
+        "recall": 0.965,
+        "f1-score": 0.9752400202122284,
+        "support": 1000.0
+      },
+      "accuracy": 0.9833333333333333,
+      "macro avg": {
+        "precision": 0.9834623223585549,
+        "recall": 0.9833333333333333,
+        "f1-score": 0.9833292649465887,
+        "support": 3000.0
+      },
+      "weighted avg": {
+        "precision": 0.9834623223585551,
+        "recall": 0.9833333333333333,
+        "f1-score": 0.9833292649465887,
+        "support": 3000.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        985,
+        1,
+        14
+      ],
+      [
+        0,
+        1000,
+        0
+      ],
+      [
+        35,
+        0,
+        965
+      ]
+    ]
+  }
+}

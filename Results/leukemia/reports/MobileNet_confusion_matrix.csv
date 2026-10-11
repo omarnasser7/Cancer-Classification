@@ -1,0 +1,5 @@
+,Benign,Malignant_Pre-B,Malignant_Pro-B,Malignant_early Pre-B
+Benign,156,2,5,8
+Malignant_Pre-B,2,283,1,2
+Malignant_Pro-B,0,0,225,1
+Malignant_early Pre-B,7,1,1,283

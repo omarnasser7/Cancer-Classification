@@ -1,0 +1,12 @@
+{
+  "cancer_type": "skin",
+  "class_names": [
+    "Benign",
+    "Malignant"
+  ],
+  "label2idx": {
+    "Benign": 0,
+    "Malignant": 1
+  },
+  "img_size": 256
+}

@@ -1,0 +1,258 @@
+{
+  "CNN": {
+    "summary": {
+      "cancer_type": "colon",
+      "model": "CNN",
+      "accuracy": 0.5,
+      "precision_macro": 0.25,
+      "recall_macro": 0.5,
+      "f1_macro": 0.3333,
+      "precision_weighted": 0.25,
+      "recall_weighted": 0.5,
+      "f1_weighted": 0.3333,
+      "auc": 0.5,
+      "train_time_sec": 118.6,
+      "epochs": 5,
+      "total_params": 33684162,
+      "trainable_params": 33683394,
+      "img_size": 256,
+      "batch_size": 64,
+      "n_eval_samples": 2000,
+      "notes": "from scratch",
+      "timestamp": "2026-09-03 21:35:25",
+      "f1__Colon adenocarcinoma": 0.6667,
+      "recall__Colon adenocarcinoma": 1.0,
+      "f1__Colon benign": 0.0,
+      "recall__Colon benign": 0.0
+    },
+    "classification_report": {
+      "Colon adenocarcinoma": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1-score": 0.6666666666666666,
+        "support": 1000.0
+      },
+      "Colon benign": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 1000.0
+      },
+      "accuracy": 0.5,
+      "macro avg": {
+        "precision": 0.25,
+        "recall": 0.5,
+        "f1-score": 0.3333333333333333,
+        "support": 2000.0
+      },
+      "weighted avg": {
+        "precision": 0.25,
+        "recall": 0.5,
+        "f1-score": 0.3333333333333333,
+        "support": 2000.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        1000,
+        0
+      ],
+      [
+        1000,
+        0
+      ]
+    ]
+  },
+  "MobileNet": {
+    "summary": {
+      "cancer_type": "colon",
+      "model": "MobileNet",
+      "accuracy": 0.974,
+      "precision_macro": 0.9748,
+      "recall_macro": 0.974,
+      "f1_macro": 0.974,
+      "precision_weighted": 0.9748,
+      "recall_weighted": 0.974,
+      "f1_weighted": 0.974,
+      "auc": 0.9991,
+      "train_time_sec": 68.0,
+      "epochs": 3,
+      "total_params": 3525954,
+      "trainable_params": 296322,
+      "img_size": 256,
+      "batch_size": 64,
+      "n_eval_samples": 2000,
+      "notes": "frozen backbone",
+      "timestamp": "2026-09-03 21:37:01",
+      "f1__Colon adenocarcinoma": 0.9745,
+      "recall__Colon adenocarcinoma": 0.994,
+      "f1__Colon benign": 0.9735,
+      "recall__Colon benign": 0.954
+    },
+    "classification_report": {
+      "Colon adenocarcinoma": {
+        "precision": 0.9557692307692308,
+        "recall": 0.994,
+        "f1-score": 0.9745098039215686,
+        "support": 1000.0
+      },
+      "Colon benign": {
+        "precision": 0.99375,
+        "recall": 0.954,
+        "f1-score": 0.9734693877551021,
+        "support": 1000.0
+      },
+      "accuracy": 0.974,
+      "macro avg": {
+        "precision": 0.9747596153846154,
+        "recall": 0.974,
+        "f1-score": 0.9739895958383353,
+        "support": 2000.0
+      },
+      "weighted avg": {
+        "precision": 0.9747596153846154,
+        "recall": 0.974,
+        "f1-score": 0.9739895958383354,
+        "support": 2000.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        994,
+        6
+      ],
+      [
+        46,
+        954
+      ]
+    ]
+  },
+  "VGG19": {
+    "summary": {
+      "cancer_type": "colon",
+      "model": "VGG19",
+      "accuracy": 0.9965,
+      "precision_macro": 0.9965,
+      "recall_macro": 0.9965,
+      "f1_macro": 0.9965,
+      "precision_weighted": 0.9965,
+      "recall_weighted": 0.9965,
+      "f1_weighted": 0.9965,
+      "auc": 0.9999,
+      "train_time_sec": 482.8,
+      "epochs": 5,
+      "total_params": 20190402,
+      "trainable_params": 165250,
+      "img_size": 256,
+      "batch_size": 64,
+      "n_eval_samples": 2000,
+      "notes": "frozen backbone",
+      "timestamp": "2026-09-03 21:45:34",
+      "f1__Colon adenocarcinoma": 0.9965,
+      "recall__Colon adenocarcinoma": 0.998,
+      "f1__Colon benign": 0.9965,
+      "recall__Colon benign": 0.995
+    },
+    "classification_report": {
+      "Colon adenocarcinoma": {
+        "precision": 0.9950149551345963,
+        "recall": 0.998,
+        "f1-score": 0.9965052421367948,
+        "support": 1000.0
+      },
+      "Colon benign": {
+        "precision": 0.9979939819458375,
+        "recall": 0.995,
+        "f1-score": 0.9964947421131698,
+        "support": 1000.0
+      },
+      "accuracy": 0.9965,
+      "macro avg": {
+        "precision": 0.9965044685402169,
+        "recall": 0.9964999999999999,
+        "f1-score": 0.9964999921249823,
+        "support": 2000.0
+      },
+      "weighted avg": {
+        "precision": 0.9965044685402169,
+        "recall": 0.9965,
+        "f1-score": 0.9964999921249823,
+        "support": 2000.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        998,
+        2
+      ],
+      [
+        5,
+        995
+      ]
+    ]
+  },
+  "ResNet50": {
+    "summary": {
+      "cancer_type": "colon",
+      "model": "ResNet50",
+      "accuracy": 0.9995,
+      "precision_macro": 0.9995,
+      "recall_macro": 0.9995,
+      "f1_macro": 0.9995,
+      "precision_weighted": 0.9995,
+      "recall_weighted": 0.9995,
+      "f1_weighted": 0.9995,
+      "auc": 1.0,
+      "train_time_sec": 182.4,
+      "epochs": 5,
+      "total_params": 24146946,
+      "trainable_params": 558466,
+      "img_size": 256,
+      "batch_size": 64,
+      "n_eval_samples": 2000,
+      "notes": "frozen backbone",
+      "timestamp": "2026-09-03 21:49:04",
+      "f1__Colon adenocarcinoma": 0.9995,
+      "recall__Colon adenocarcinoma": 0.999,
+      "f1__Colon benign": 0.9995,
+      "recall__Colon benign": 1.0
+    },
+    "classification_report": {
+      "Colon adenocarcinoma": {
+        "precision": 1.0,
+        "recall": 0.999,
+        "f1-score": 0.9994997498749375,
+        "support": 1000.0
+      },
+      "Colon benign": {
+        "precision": 0.999000999000999,
+        "recall": 1.0,
+        "f1-score": 0.9995002498750625,
+        "support": 1000.0
+      },
+      "accuracy": 0.9995,
+      "macro avg": {
+        "precision": 0.9995004995004995,
+        "recall": 0.9995,
+        "f1-score": 0.999499999875,
+        "support": 2000.0
+      },
+      "weighted avg": {
+        "precision": 0.9995004995004995,
+        "recall": 0.9995,
+        "f1-score": 0.9994999998749999,
+        "support": 2000.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        999,
+        1
+      ],
+      [
+        0,
+        1000
+      ]
+    ]
+  }
+}

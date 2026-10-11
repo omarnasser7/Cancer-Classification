@@ -1,0 +1,16 @@
+{
+  "n_images": 3256,
+  "n_classes": 4,
+  "class_counts": {
+    "Malignant_early Pre-B": 985,
+    "Malignant_Pre-B": 963,
+    "Malignant_Pro-B": 804,
+    "Benign": 504
+  },
+  "imbalance_ratio": 1.9543650793650793,
+  "width_mean": 224.0,
+  "height_mean": 224.0,
+  "color_modes": {
+    "RGB": 120
+  }
+}
